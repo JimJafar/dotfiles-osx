@@ -78,12 +78,8 @@ TMPPREFIX="${TMPDIR%/}/zsh"
 # Resolve DOTFILES_DIR (assuming ~/dotfiles on distros without readlink and/or ${(%):-%N}/$0)
 
 READLINK=$(which greadlink || which readlink)
-CURRENT_SCRIPT=${(%):-%N}
 
-if [[ -n $CURRENT_SCRIPT && -x "$READLINK" ]]; then
-    SCRIPT_PATH=$($READLINK -f "$CURRENT_SCRIPT")
-    DOTFILES_DIR=$(dirname "$(dirname "$SCRIPT_PATH")")
-elif [ -d "$HOME/dotfiles" ]; then
+if [ -d "$HOME/dotfiles" ]; then
     DOTFILES_DIR="$HOME/dotfiles"
 else
     echo "Unable to find dotfiles, exiting."
@@ -92,7 +88,7 @@ fi
 
 # Finally we can source the dotfiles (order matters)
 
-for DOTFILE in "$DOTFILES_DIR"/system/.{function,function_*,path,env,alias,completion,grep,prompt,nvm,rvm,custom,fasd,prezto,tmux}; do
+for DOTFILE in "$DOTFILES_DIR"/system/.{function,function_*,path,alias,grep,prompt,nvm,rvm,custom,fasd,prezto,tmux}; do
     [ -f "$DOTFILE" ] && . "$DOTFILE"
 done
 
@@ -104,7 +100,7 @@ fi
 
 # Clean up
 
-unset READLINK CURRENT_SCRIPT SCRIPT_PATH DOTFILE
+unset DOTFILE
 
 # Export
 

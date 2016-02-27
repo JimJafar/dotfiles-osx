@@ -1,6 +1,7 @@
 # fire up zsh
 zsh
 
+source "$HOME/.rvm/scripts/rvm"
 source "$DOTFILES_DIR"/runcom/zprezto/.zprofile
 
 git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
