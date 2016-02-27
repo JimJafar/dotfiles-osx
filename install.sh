@@ -24,7 +24,6 @@ ln -sfv "$DOTFILES_DIR/git/.gitignore_global" ~
 . "$DOTFILES_DIR/install/bash.sh"
 . "$DOTFILES_DIR/install/npm.sh"
 . "$DOTFILES_DIR/install/pip.sh"
-. "$DOTFILES_DIR/install/prezto.sh"
 
 if [ "$(uname)" == "Darwin" ]; then
     . "$DOTFILES_DIR/install/brew-cask.sh"
@@ -41,3 +40,7 @@ bats "$DOTFILES_DIR"/test/*.bats
 if [ -d "$EXTRA_DIR" -a -f "$EXTRA_DIR/install.sh" ]; then
     . "$EXTRA_DIR/install.sh"
 fi
+
+# Setup zsh and Prezto
+
+. "$DOTFILES_DIR/install/prezto.sh"
