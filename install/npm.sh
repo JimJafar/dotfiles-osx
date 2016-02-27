@@ -11,6 +11,7 @@ packages=(
     grunt
     gulp
     underscore
+    underscore-cli
     yo
 )
 
