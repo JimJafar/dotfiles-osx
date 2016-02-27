@@ -1,5 +1,7 @@
 #!/usr/bin/env bats
 
+source "$HOME/.bash_profile"
+
 @test "dotfiles" {
 	run dotfiles
 	[[ $output =~ "Usage" ]]

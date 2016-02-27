@@ -10,6 +10,7 @@ packages=(
     bower
     grunt
     gulp
+    underscore
     yo
 )
 
@@ -20,7 +21,6 @@ packages=(
 #spot
 #svgo
 #tldr
-#underscore
 #vtop
 
 npm install -g "${packages[@]}"
