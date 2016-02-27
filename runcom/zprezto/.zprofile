@@ -75,16 +75,16 @@ TMPPREFIX="${TMPDIR%/}/zsh"
 
 # DOTFILES STUFF - https://github.com/JimSangwine/dotfiles
 
-# Resolve DOTFILES_DIR (assuming ~/.dotfiles on distros without readlink and/or $BASH_SOURCE/$0)
+# Resolve DOTFILES_DIR (assuming ~/dotfiles on distros without readlink and/or ${(%):-%N}/$0)
 
 READLINK=$(which greadlink || which readlink)
-CURRENT_SCRIPT=$BASH_SOURCE
+CURRENT_SCRIPT=${(%):-%N}
 
 if [[ -n $CURRENT_SCRIPT && -x "$READLINK" ]]; then
     SCRIPT_PATH=$($READLINK -f "$CURRENT_SCRIPT")
     DOTFILES_DIR=$(dirname "$(dirname "$SCRIPT_PATH")")
-elif [ -d "$HOME/.dotfiles" ]; then
-    DOTFILES_DIR="$HOME/.dotfiles"
+elif [ -d "$HOME/dotfiles" ]; then
+    DOTFILES_DIR="$HOME/dotfiles"
 else
     echo "Unable to find dotfiles, exiting."
     return # `exit 1` would quit the shell itself
