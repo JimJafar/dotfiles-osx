@@ -1,8 +1,8 @@
 brew install nvm
 
-nvm install 4.2
-nvm use 4.2
-nvm alias default 4.2
+nvm install 5
+nvm use 5
+nvm alias default 5
 
 # Globally install with npm
 
