@@ -33,7 +33,7 @@ fi
 
 # Run tests
 
-bats test/*.bats
+bats "$DOTFILES_DIR"/test/*.bats
 
 # Install extra stuff
 

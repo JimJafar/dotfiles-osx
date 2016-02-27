@@ -34,13 +34,13 @@ apps=(
     zsh
     zsh-completions
     tmux
+    mackup
 )
 
 # Removed:
 #ffmpeg
 #gifsicle
 #imagemagick
-#mackup
 
 
 brew install "${apps[@]}"
