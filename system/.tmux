@@ -1,5 +1,7 @@
-CURRENT_SHELL= pstree  -p $$  | tr ' ()' '\012\012\012' | grep -i "sh$" | grep -v "$0" | tail -1
-echo "$CURRENT_SHELL"
+MEH=$(ps -p $$)
+echo "meh: $MEH"
+CURRENT_SHELL=$(pstree  -p $$  | tr ' ()' '\012\012\012' | grep -i "sh$" | grep -v "$0" | tail -1)
+echo "current_shell: $CURRENT_SHELL"
 if [[ $CURRENT_SHELL == *"zsh"* ]]; then
   echo "loading tmuxinator ZSH connector"
   source "$DOTFILES_DIR"/tmux/.tmuxinator.zsh
