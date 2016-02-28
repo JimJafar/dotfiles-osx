@@ -44,6 +44,8 @@ Or, using wget:
 
     sh -c "`wget -O - --no-check-certificate https://raw.githubusercontent.com/JimSangwine/dotfiles/master/remote-install.sh`"
 
+### NOTE: The first time you run tmux, do ctrl+a followed by I to install plugins!
+
 ## The `dotfiles` command
 
     $ dotfiles help
