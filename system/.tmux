@@ -12,5 +12,5 @@ fi
 
 # symlink config
 if [ ! -e "$HOME"/.tmux.conf ] && [ ! -L "$HOME"/.tmux.conf ]; then
-  ln -s "$DOTFILES_DIR"./tmux/tmux.conf "$HOME"/.tmux.conf
+  ln -s "$DOTFILES_DIR"/tmux/.tmux.conf "$HOME"/.tmux.conf
 fi
