@@ -1,3 +1,6 @@
+# Apply the defaults in dotfiles/osx/defaults.sh
+alias applyOSXDefaults=". $DOTFILES_DIR/osx/defaults.sh"
+
 # Shortcuts
 
 alias gg="$GIT_GUI"

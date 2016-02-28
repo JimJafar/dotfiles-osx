@@ -5,11 +5,21 @@
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
 
+# OS
+
+if [[ "$OSTYPE" == darwin* ]]; then
+    OS="OSX"
+else
+    OS="$OSTYPE"
+fi
+
+echo "OS: $OS"
+
 #
 # Browser
 #
 
-if [[ "$OSTYPE" == darwin* ]]; then
+if [ "$OS" = "OSX" ]; then
   export BROWSER='open'
 fi
 
