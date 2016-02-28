@@ -1,6 +1,8 @@
 if [[ $0 == *"-zsh"* ]]; then
+  echo "loading tmuxinator ZSH connector"
   source "$DOTFILES_DIR"/tmux/.tmuxinator.zsh
 else
+  echo "loading tmuxinator BASH connector"
   source "$DOTFILES_DIR"/tmux/.tmuxinator.bash
 fi
 
