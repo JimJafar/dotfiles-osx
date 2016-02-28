@@ -10,7 +10,7 @@ done
 # Set zsh as default shell
 chsh -s /bin/zsh
 
-echo "All done! Firing up zsh..."
-echo "Please run `source ~/.zprofile`"
+echo "All done! Please run 'source ~/.zprofile' or just fire up a new terminal!"
+echo "Switching to zsh now..."
 
 zsh

@@ -1,7 +1,7 @@
 if [ $0 == "-zsh" ]; then
   source "$DOTFILES_DIR"/tmux/.tmuxinator.zsh
 else
-  source "$DOTFILES_DIR"/tmux/.tmuxinator.sh
+  source "$DOTFILES_DIR"/tmux/.tmuxinator.bash
 fi
 
 # install tmux plugin manager
@@ -11,4 +11,6 @@ if [ ! -d "$HOME/.tmux/plugins/tpm" ]; then
 fi
 
 # symlink config
-ln -s "$DOTFILES_DIR"./tmux/tmux.conf "$HOME"/.tmux.conf
+if [ ! -e "$HOME"/.tmux.conf ] && [ ! -L "$HOME"/.tmux.conf ]; then
+  ln -s "$DOTFILES_DIR"./tmux/tmux.conf "$HOME"/.tmux.conf
+fi
