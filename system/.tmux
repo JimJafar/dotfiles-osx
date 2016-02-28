@@ -1,4 +1,5 @@
-if [[ $0 == *"-zsh"* ]]; then
+echo "shell: $0"
+if [[ $0 == *"zsh"* ]]; then
   echo "loading tmuxinator ZSH connector"
   source "$DOTFILES_DIR"/tmux/.tmuxinator.zsh
 else
