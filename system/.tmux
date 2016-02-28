@@ -1,4 +1,4 @@
-if [ $0 == "-zsh" ]; then
+if [[ $0 == *"-zsh"* ]]; then
   source "$DOTFILES_DIR"/tmux/.tmuxinator.zsh
 else
   source "$DOTFILES_DIR"/tmux/.tmuxinator.bash
