@@ -1,8 +1,5 @@
 echo "Setting up zsh and zprezto..."
 
-source "$HOME/.rvm/scripts/rvm"
-source "$DOTFILES_DIR"/runcom/zprezto/.zprofile
-
 git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
 
 setopt EXTENDED_GLOB
@@ -13,6 +10,7 @@ done
 # Set zsh as default shell
 chsh -s /bin/zsh
 
-echo "All done! Firing up zsh :)"
+echo "All done! Firing up zsh..."
+echo "Please run `source ~/.zprofile`"
 
 zsh
