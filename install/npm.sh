@@ -1,5 +1,7 @@
 brew install nvm
 
+source "$DOTFILES_DIR"/system/.nvm
+
 nvm install 5
 nvm use 5
 nvm alias default 5
