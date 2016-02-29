@@ -31,3 +31,5 @@ npm install -g "${packages[@]}"
 npm set init.author.name "Jim Sangwine"
 npm set init.author.email "jim@sangwine.net"
 npm set init.author.url "http://sangwine.net"
+
+ln -sfv "$DOTFILES_DIR/runcom/.npmrc" ~
