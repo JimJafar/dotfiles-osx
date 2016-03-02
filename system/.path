@@ -25,3 +25,7 @@ PATH=`echo -n $PATH | awk -v RS=: '{ if (!arr[$0]++) {printf("%s%s",!ln++?"":":"
 # Wrap up
 
 export PATH
+
+# Send PATH to launchd so GUI apps like SourceTree get it
+
+launchctl setenv PATH $PATH
