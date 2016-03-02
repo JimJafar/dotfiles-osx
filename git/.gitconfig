@@ -4,10 +4,10 @@
 [core]
 	excludesfile = /Users/jim/.gitignore_global
 [difftool "sourcetree"]
-	cmd = /usr/local/bin/ksdiff -w \"$LOCAL\" \"$REMOTE\"
+	cmd = /usr/local/bin/ksdiff $LOCAL $REMOTE
 	path = 
 [mergetool "sourcetree"]
-	cmd = /usr/local/bin/ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	cmd = /usr/local/bin/ksdiff $LOCAL $REMOTE $MERGED
 	trustExitCode = true
 [credential]
 	helper = store
