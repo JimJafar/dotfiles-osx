@@ -1,6 +1,10 @@
 # Jim's .dotfiles
 
-Based on: https://github.com/webpro/dotfiles
+Heavily based on and with much gratitude to: https://github.com/webpro/dotfiles
+
+Feel free to take anything from here, but please carefully check and change everything to suit your needs before you install. Don't just do it blindly and make sure you know what you're doing! It's your responsibility if this messes up your setup :)
+
+From @webpro's README:
 
 Targets OS X systems, but since it has some defensive checks it should work on *nix as well (tested on a few Linux boxes).
 
