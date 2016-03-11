@@ -13,6 +13,7 @@ apps=(
     bash-completion2
     bats
     battery
+    cmake
     coreutils
     dockutil
     fasd
