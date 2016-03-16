@@ -35,6 +35,7 @@ apps=(
     brackets
     chitchat
     charles
+    vox
 )
 
 # Removed
