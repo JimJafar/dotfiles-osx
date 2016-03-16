@@ -7,6 +7,6 @@ mkdir -p "$BUNDLE_DIR" && (git clone https://github.com/VundleVim/vundle.git "$B
 vim +PluginInstall +qall
 
 # Compile YouCompleteMe
-cd "$BUNDLE_DIR/YouCompleteMe" && ./install.py --tern-completer
+cd "$BUNDLE_DIR/YouCompleteMe" && git submodule update --init --recursive && ./install.py --tern-completer
 
 cd -
