@@ -28,8 +28,5 @@ export PATH
 
 # Send PATH to launchd so GUI apps like SourceTree get it
 
-# This doesn't work anymore in 10.8+
+# This doesn't work anymore in 10.8+ - see install/osx.sh for the new version
 launchctl setenv PATH $PATH
-
-# This should work in Mavericks, Yosemite, El Capitan:
-sudo launchctl config user path $PATH

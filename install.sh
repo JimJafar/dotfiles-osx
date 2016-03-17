@@ -28,6 +28,7 @@ ln -sfv "$DOTFILES_DIR/vim/.vimrc" ~
 . "$DOTFILES_DIR/install/pip.sh"
 
 if [ "$(uname)" == "Darwin" ]; then
+    . "$DOTFILES_DIR/install/osx.sh"
     . "$DOTFILES_DIR/install/brew-cask.sh"
     . "$DOTFILES_DIR/install/gem.sh"
     ln -sfv "$DOTFILES_DIR/etc/mackup/.mackup.cfg" ~
