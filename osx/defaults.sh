@@ -1,6 +1,6 @@
 # After changing this file use the 'applyOSXDefaults' alias to apply your changes in OSX
 
-COMPUTER_NAME="Blade"
+COMPUTER_NAME="Bertha"
 
 # Ask for the administrator password upfront
 sudo -v
