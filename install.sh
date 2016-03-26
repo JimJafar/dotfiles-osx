@@ -43,7 +43,3 @@ bats "$DOTFILES_DIR"/test/*.bats
 if [ -d "$EXTRA_DIR" -a -f "$EXTRA_DIR/install.sh" ]; then
     . "$EXTRA_DIR/install.sh"
 fi
-
-# Setup zsh and Prezto
-
-. "$DOTFILES_DIR/install/prezto.sh"
