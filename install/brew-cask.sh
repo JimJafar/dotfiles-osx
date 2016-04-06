@@ -36,6 +36,7 @@ apps=(
     chitchat
     charles
     vox
+    colloquy
 )
 
 # Removed
