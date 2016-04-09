@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+Start up the Nuon HipChat bots every morning at 07:30
+-->
+<plist version="1.0">
+  <dict>
+    <key>EnableGlobbing</key>
+    <true/>
+    <key>Label</key>
+    <string>net.sangwine.starthipchatbots</string>
+    <key>ProgramArguments</key>
+    <array>
+      <string>~/launchd-scripts/start-hipchat-bots.sh</string>
+    </array>
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>07</integer>
+        <key>Minute</key>
+        <integer>30</integer>
+    </dict>
+  </dict>
+</plist>

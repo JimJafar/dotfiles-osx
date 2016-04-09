@@ -20,22 +20,23 @@ apps=(
     git
     gnu-sed --with-default-names
     grep --with-default-names
+    heroku
     hub
     httpie
     jq
+    mackup
     peco
     psgrep
     python
     shellcheck
     ssh-copy-id
     svn
+    tmux
     tree
     vim
     wget
     zsh
     zsh-completions
-    tmux
-    mackup
 )
 
 # Removed:
