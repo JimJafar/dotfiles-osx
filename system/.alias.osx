@@ -56,3 +56,16 @@ alias killosx="killfinder && killdock && killmenubar"
 ## Kill all the tabs in Chrome to free up memory
 
 alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v extension-process | tr -s ' ' | cut -d ' ' -f2 | xargs kill"
+
+# Update the $PATH for GUI apps via launchctl if the node version is changed via nvm
+
+function __nvmAndUpdatePath() {
+  local launchAgent="$DOTFILES_DIR/osx/LaunchAgents/net.sangwine.setpath.plist";
+  if [ "$1" = "use" ]; then
+    nvm "$@" && launchctl unload "$launchAgent" && launchctl load "$launchAgent";
+  else
+    nvm "$@";
+  fi
+}
+
+alias nvm="__nvmAndUpdatePath"
