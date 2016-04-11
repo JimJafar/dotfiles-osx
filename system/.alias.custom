@@ -1,0 +1,5 @@
+# Custom / personal aliases
+
+# Project file locations
+
+alias idea="cd $HOME/Documents/IDEA"
