@@ -4,18 +4,18 @@
 Add the current nvm node path to $PATH when loading GUI apps (e.g. SourceTree)
 -->
 <plist version="1.0">
-<dict>
-  <key>Label</key>
-  <string>my.startup</string>
-  <key>ProgramArguments</key>
-  <array>
-    <string>sh</string>
-    <string>-c</string>
-    <string>
-      launchctl setenv PATH "$PATH:`nvm which current | sed 's/node$//g'`" && osascript -e "display notification \"has been updated\" with title \"node path\""
-    </string>
-  </array>
-  <key>RunAtLoad</key>
-  <true/>
-</dict>
+  <dict>
+    <key>Label</key>
+    <string>net.sangwine.setpath</string>
+    <key>ProgramArguments</key>
+    <array>
+      <string>bash</string>
+      <string>-c</string>
+      <string>
+        launchctl setenv PATH "$PATH:`nvm which current | sed 's/node$//g'`" ; osascript -e "display notification \"has been updated\" with title \"node path\""
+      </string>
+    </array>
+    <key>RunAtLoad</key>
+    <true/>
+  </dict>
 </plist>

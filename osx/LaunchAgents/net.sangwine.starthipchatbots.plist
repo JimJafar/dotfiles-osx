@@ -5,12 +5,12 @@ Start up the Nuon HipChat bots every morning at 07:30
 -->
 <plist version="1.0">
   <dict>
-    <key>EnableGlobbing</key>
-    <true/>
     <key>Label</key>
     <string>net.sangwine.starthipchatbots</string>
     <key>ProgramArguments</key>
     <array>
+      <string>bash</string>
+      <string>-c</string>
       <string>~/launchd-scripts/start-hipchat-bots.sh</string>
     </array>
     <key>StartCalendarInterval</key>
