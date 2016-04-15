@@ -10,6 +10,6 @@ for directory in LaunchAgents LaunchDaemons; do
   fi
   for file in "$DOTFILES_DIR/osx/$directory"/*.plist; do
     ln -sfv "$DOTFILES_DIR/osx/$directory/${file##*/}" "$HOME/Library/$directory/"
-    launchctl load "$DOTFILES_DIR/osx/$directory/${file##*/}"
+    launchctl load "$HOME/Library/$directory/${file##*/}"
   done
 done
