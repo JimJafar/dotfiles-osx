@@ -20,5 +20,9 @@ Stop the Nuon HipChat bots every morning at 01:00
         <key>Minute</key>
         <integer>00</integer>
     </dict>
+    <key>StandardOutPath</key>
+    <string>/Users/jim/Desktop/launchd.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/jim/Desktop/launchd.log</string>
   </dict>
 </plist>

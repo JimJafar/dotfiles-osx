@@ -20,5 +20,9 @@ Start up the Nuon HipChat bots every morning at 07:30
         <key>Minute</key>
         <integer>30</integer>
     </dict>
+    <key>StandardOutPath</key>
+    <string>/Users/jim/Desktop/launchd.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/jim/Desktop/launchd.log</string>
   </dict>
 </plist>
