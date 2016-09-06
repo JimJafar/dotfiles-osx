@@ -23,7 +23,7 @@ sub_help () {
 sub_edit () {
     sh -c "$EDITOR_ALT $DOTFILES_DIR"
     read -p "Commit message:   " message
-    ( cd "$DOTFILES_DIR" && git add -A && git commit -m "$message" )
+    ( cd "$DOTFILES_DIR" && git add -A && git commit -m "$message" && git push )
 }
 
 sub_reload () {
