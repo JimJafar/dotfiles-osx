@@ -38,6 +38,7 @@ apps=(
     wget
     zsh
     zsh-completions
+    rlwrap
 )
 
 # Removed:

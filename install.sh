@@ -28,6 +28,7 @@ ln -sfv "$DOTFILES_DIR/vim/.vimrc" ~
 . "$DOTFILES_DIR/install/bash-it.sh"
 . "$DOTFILES_DIR/install/npm.sh"
 . "$DOTFILES_DIR/install/pip.sh"
+. "$DOTFILES_DIR/install/lein.sh"
 
 if [ "$(uname)" == "Darwin" ]; then
     . "$DOTFILES_DIR/install/osx.sh"
