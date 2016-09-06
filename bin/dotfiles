@@ -22,10 +22,8 @@ sub_help () {
 
 sub_edit () {
     sh -c "$EDITOR_ALT $DOTFILES_DIR"
-    while true; do
-      read -p "Commit message:   " message
-      ( cd "$DOTFILES_DIR" && git add -A && git commit -m "$message" )
-    done
+    read -p "Commit message:   " message
+    ( cd "$DOTFILES_DIR" && git add -A && git commit -m "$message" )
 }
 
 sub_reload () {
