@@ -33,7 +33,6 @@ apps=(
     svn
     tmux
     tree
-    underscore-cli
     vim
     wget
     zsh
