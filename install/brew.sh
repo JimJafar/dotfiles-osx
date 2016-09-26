@@ -39,6 +39,7 @@ apps=(
     zsh-completions
     rlwrap
     koekeishiya/kwm/kwm
+    homebrew/php/composer
 )
 
 # Removed:
