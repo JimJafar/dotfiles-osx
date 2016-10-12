@@ -3,3 +3,4 @@
 # Project file locations
 
 alias idea="cd $HOME/Documents/IDEA"
+alias sshexellerator="ssh pocvendor@52.208.201.153"
