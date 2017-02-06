@@ -4,4 +4,8 @@
 
 alias idea="cd $HOME/Documents/IDEA"
 alias vmwareip="ifconfig vmnet8"
-alias sshexellerator="ssh pocvendor@52.208.201.153"
+alias sshkodi="ssh -oHostKeyAlgorithms=+ssh-dss -p2222 jim@192.168.0.141"
+alias sshmx="ssh -i "~/mx-ec2-jim.pem" ec2-user@ec2-54-169-94-188.ap-southeast-1.compute.amazonaws.com"
+alias sshevil="ssh jim@172.93.48.145"
+alias spotlightOff="sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.metadata.mds.plist"
+alias spotlightOn="sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.metadata.mds.plist"
