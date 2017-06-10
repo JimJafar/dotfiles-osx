@@ -3,6 +3,7 @@
 # Project file locations
 
 alias idea="cd $HOME/Documents/IDEA"
+alias code="cd $HOME/Documents/CODE"
 alias vmwareip="ifconfig vmnet8"
 alias sshkodi="ssh -oHostKeyAlgorithms=+ssh-dss -p2222 jim@192.168.0.141"
 alias sshmxBackendTest="ssh -i "~/mx-ec2-jim.pem" ec2-user@ec2-52-74-45-46.ap-southeast-1.compute.amazonaws.com"

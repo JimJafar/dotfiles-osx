@@ -24,7 +24,6 @@ apps=(
     hub
     httpie
     jq
-    mackup
     peco
     psgrep
     python
